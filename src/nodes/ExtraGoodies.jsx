@@ -12,6 +12,7 @@ import {
 
 import "@xyflow/react/dist/style.css";
 import Header from "../components/Header";
+import "../styles/ExtraGoodies.scss";
 
 const initialNodes = [
   { id: "1", position: { x: 10, y: 30 }, data: { label: "1" } },
@@ -29,9 +30,9 @@ export default function ExtraGoodies() {
   );
 
   return (
-    <div className="w-full h-full box-border">
+    <div className="sub-flow-area">
       <Header title="Extra Goodies" />
-      <div className="w-full h-full box-border ">
+      <div className=" react-flow-workspace">
         <ReactFlow
           nodes={nodes}
           edges={edges}

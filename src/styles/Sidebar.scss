@@ -1,0 +1,143 @@
+.sidebar-inside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    .sidebar-nav {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        --bg-color: #232529;
+        background: var(--bg-color);
+
+        .sidebar__header {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+            box-shadow: rgb(49, 51, 55) 0px 1px 0px;
+
+            .btn-header {
+                position: relative;
+                padding: 0px 48px 0px 12px;
+                height: 48px;
+                width: 100%;
+                margin: 0px;
+                border-radius: 0px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                background: none;
+                outline: none;
+                border: none;
+                box-sizing: border-box;
+                transition: background 160ms, height 160ms;
+
+                .header-icon {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    vertical-align: middle;
+                    overflow: hidden;
+                    user-select: none;
+                    border-radius: 8px;
+                    flex-shrink: 0;
+                    text-align: center;
+                    font-family: inherit;
+                    width: 26px;
+                    height: 26px;
+
+                    .header-icon-fst-ltr {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        cursor: default;
+                        user-select: none;
+                        background-color: rgb(15, 194, 123);
+                        color: rgb(221, 249, 228);
+                        font-weight: 500;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        line-height: 1;
+                        transition: background-color 0.2s;
+                    }
+                }
+
+                .header-title {
+                    display: flex;
+                    flex: 1 1 0%;
+                    flex-direction: row;
+                    align-items: center;
+                    overflow: hidden;
+
+                    .header-title-text {
+                        margin-left: 12px;
+                        margin-right: 4px;
+                        font-family: Inter;
+                        letter-spacing: -0.02em;
+                        font-weight: 600;
+                        line-height: 20px;
+                        font-size: 16px;
+                        color: rgb(238, 239, 241);
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    svg {
+                        flex: 0 0 auto;
+                        color: #EEEFF1;
+
+                        use {
+                            color: #EEEFF1;
+                            font: inherit;
+                        }
+                    }
+                }
+            }
+
+            .slider-btn {
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                transform: translateY(-12px);
+
+                .collapse-btn {
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    margin: 0px;
+                    padding: 0px;
+                    width: 24px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    .slider__icon:hover {
+                        transform: translateX(0px) scale(1);
+                        opacity: 1;
+                    }
+
+                    .slider__back_icon {
+                        transform: translateX(0px);
+                        opacity: 0;
+                    }
+
+                    .slider__back_icon_i {
+                        transform: translate(6px);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

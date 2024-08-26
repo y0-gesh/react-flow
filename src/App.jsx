@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/App.css";
+import "./styles/App.scss";
 import { Route, Routes } from "react-router-dom";
 import StaticNode from "./nodes/StaticNode";
 import Interactivity from "./nodes/Interactivity";
@@ -10,15 +10,13 @@ import ExtraGoodies from "./nodes/ExtraGoodies";
 function App() {
   return (
     <>
-      <div className="w-screen h-screen box-border">
-        <div className="w-full h-full flex box-border">
-          <div className="w-full h-full box-border relative">
-            <ExtraGoodies />
+      <div className="main-container">
+        <div className="sub-container">
+          <div className="side-bar">
+            <Sidebar />
           </div>
-          <div className="w-[500px] h-full box-border border-l-8 border-slate-200" >
-            <Routes>
-              <Route path="/" element={<Sidebar />} />
-            </Routes>
+          <div className="title-bar">
+            <Header title="Workflows" />
           </div>
         </div>
       </div>
