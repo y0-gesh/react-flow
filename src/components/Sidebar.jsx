@@ -71,6 +71,162 @@ const Sidebar = () => {
             </button>
           </div>
         </div>
+        <div className="sidebar__search">
+          <button className="search-action-btn">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="sc-galXqy gCzTER">
+              <rect
+                x="2"
+                y="1"
+                width="10"
+                height="9"
+                rx="2.5"
+                stroke="#EEEFF1"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="sc-fZhijA cCzxAH"></rect>
+              <rect
+                x="2"
+                y="1"
+                width="10"
+                height="9"
+                rx="2.5"
+                stroke="#EEEFF1"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="#232529"
+                data-active="false"
+                className="sc-laRRCm lhiiKd"></rect>
+              <path
+                d="M5.33333 3.1665V7.83317M5.33333 6.1665L6.38596 5.1665M6.38596 5.1665L8.49123 3.1665M6.38596 5.1665L8.66667 7.83317"
+                stroke="#EEEFF1"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                data-active="false"
+                className="sc-idzFOD dVtldE"></path>
+            </svg>
+            <div className="quick-action-text">Ouick actions</div>
+            <div className="kbd-action">
+              <kbd className="kbd-class ctrlk">Ctrlk</kbd>
+            </div>
+          </button>
+          <button className="search-icon-btn">
+            <svg height="14px" width="14px" className="sc-jTQCzO jFpUCO">
+              <use
+                href="https://app.attio.com/web-assets/assets/icon-defs/858a5de2c8ddc4fb09b9f69cc7351a52.svg#icon"
+                height="14px"
+                width="14px"></use>
+            </svg>
+            <kbd className="frd-slash">/</kbd>
+          </button>
+        </div>
+        <div className="sidebar__panel">
+          <div className="panel-container">
+            <div className="menu-container">
+              <div className="menu-item">
+                <svg height="14px" width="14px" className="sc-jTQCzO cMjOef">
+                  <use
+                    href="https://app.attio.com/web-assets/assets/icon-defs/953851fa8f7e1a030203bdeae3ee23e2.svg#icon"
+                    height="14px"
+                    width="14px"></use>
+                </svg>
+                <span>Notifications</span>
+              </div>
+              <div className="menu-item active">
+                <i className="icon tasks"></i>
+                <span>Tasks</span>
+              </div>
+              <div className="menu-item">
+                <i className="icon notes"></i>
+                <span>Notes</span>
+              </div>
+              <div className="menu-item">
+                <i className="icon emails"></i>
+                <span>Emails</span>
+              </div>
+              <div className="menu-item">
+                <i className="icon reports"></i>
+                <span>Reports</span>
+              </div>
+              <div className="menu-item">
+                <i className="icon automations"></i>
+                <span>Automations</span>
+              </div>
+            </div>
+            <div className="menu-favorites-section">
+              <div className="fav-dropdown">
+                <div className="sub-fav">
+                  <svg
+                    height="14px"
+                    width="14px"
+                    data-state="open"
+                    className="sc-jTQCzO llkbFI sc-hWefFZ gJByXy">
+                    <use
+                      href="https://app.attio.com/web-assets/assets/icon-defs/8f0dcf0351a8cba1ac364bce6e82cad3.svg#icon"
+                      height="14px"
+                      width="14px"></use>
+                  </svg>
+                  <div className="fav-text">Favorites</div>
+                  <div className="create-fav-icon">
+                    <button className="fav-btn">
+                      <svg
+                        height="14px"
+                        width="14px"
+                        className="sc-jTQCzO bHGgSR">
+                        <use
+                          href="https://app.attio.com/web-assets/assets/icon-defs/2e14c489269de17ef825f009d37d4104.svg#icon"
+                          height="14px"
+                          width="14px"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="fav-list">No favorites</div>
+            </div>
+
+            <div className="menu-section">
+              <span className="section-title">Records</span>
+              <div className="menu-item">
+                <i className="icon companies"></i>
+                <span>Companies</span>
+              </div>
+              <div className="menu-item">
+                <i className="icon people"></i>
+                <span>People</span>
+              </div>
+            </div>
+
+            <div className="menu-section">
+              <span className="section-title">Lists</span>
+            </div>
+          </div>
+        </div>
+        <div className="sidebar__footer">
+          <div className="trial-info">
+            <div className="help-steps">
+              <i className="icon help-icon">?</i>
+              <span>Help and first steps</span>
+              <div className="progress">
+                <span>1/5</span>
+              </div>
+            </div>
+            <div className="trial-days">
+              <div className="days-left">
+                <span>11</span>
+              </div>
+              <span>days left on trial</span>
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
   );
